@@ -1,0 +1,136 @@
+/* web.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #2c3e50; /* Dark blue heading */
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Center the search bar */
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.navigation {
+    background-color: #333; /* Dark background for navigation */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navigation a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 5px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.featured-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents image from creating extra space */
+    margin: 0 auto; /* Centers the image */
+}
+
+.caption {
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+}
+
+.image-gallery img {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design (adjust as needed) */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .search-input {
+        width: 90%; /* Make search bar wider on smaller screens */
+    }
+}
